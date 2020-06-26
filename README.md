@@ -42,7 +42,7 @@ Your data, two scripts and an index are required to run kallisto.
 > 3) And a transcriptome [index](https://github.com/pachterlab/kallisto-transcriptome-indices)
 
 
-## Job script (`start_kallisto_array.sh`)
+## Job script (start_kallisto_array.sh)
 In this script we are requesting 1 core, 12h runtime, 32GB and 459 threads (the number of threads corresponds to the number of samples you have - in this case we have 459 samples). After specifing what requirements we have, we load the module `anaconda3` and we activate the environment previously made (in this case the enviroenment is called `kallisto_env`).
 We then list the folders present in our directory, we group the ones that start with S (we only want to use the folders that contain samples -they all start with S) and we assign the folders' names to a file called `list_of dirs.txt`.
 We then create a variable called `INPUT_DIR` that will be used to loop through the folders that contain the data.
@@ -65,7 +65,7 @@ INPUT_DIR=$(sed -n "${SGE_TASK_ID}p" list_of_dirs.txt)
 ./kallisto_bash_array.sh $INPUT_DIR  #run the script
 ```
 
-## Script to quantify abundance (`kallisto_bash_array.sh')
+## Script to quantify abundance (kallisto_bash_array.sh)
 Once created the previous script, we can work on the script that quantifies abundance.
 
 ```{bash}
