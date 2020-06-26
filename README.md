@@ -32,11 +32,12 @@ Array jobs are very useful when repeating the same analysis over many samples.
 In order to run our analysis on Apocrita, we need to write a bash script where we request a certain amount of RAM, cores, run time and threads. Array jobs allow to run the same job a large number of times with different input parameters on Apocrita. Whilst this could be done by submitting lots of individual jobs, a more efficient and robust way is to use an array job. This makes kallisto fast and efficient.
 
 ### Script Explaination - JOB SCRIPT
-Two scripts are required to run kallisto.
+Your data, two scripts and an index are required to run kallisto on Apocrita.
 > 1) A script we called start_kallisto_array.sh (to submit the job)
 
 > 2) A script called kallisto_bash_array.sh (running kallisto)
 
+> 3) An [index](https://github.com/pachterlab/kallisto-transcriptome-indices)
 
 
 In the top portion of the script we are requesting 1 core, 12h runtime, 32GB and 459 threads (the number of threads corresponds to the number of samples you have - in this case we have 459 samples). After specifing what requirements we have, we load the module anaconda3 and we activate the environment previously made (in this case the enviroenment is called "kallisto_env").
