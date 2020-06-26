@@ -1,7 +1,7 @@
 ## How to efficiently run kallisto on Apocrita
 
-Sara Masarone  
-s.masarone@qmul.ac.uk  smasarone@turing.ac.uk
+[Sara Masarone](https://www.turing.ac.uk/people/doctoral-students/sara-masarone)
+[s.masarone@qmul.ac.uk](mailto:s.masarone@qmul.ac.uk)   [smasarone@turing.ac.uk](mailto:smasarone@turing.ac.uk)
 
 This documentation shows how to quantify abundances of transcripts from bulk and single-cell RNA-Seq data using [kallisto](https://pachterlab.github.io/kallisto/starting) on Apocrita (QMUL cluster).
 
@@ -85,3 +85,13 @@ Last, to run our scripts and submit the job:
 ```{bash}
 qsub start_kallisto_array.sh
 ```
+You can monitor your job using:
+```{bash}
+qstat
+```
+If you see that your job is pending (qw) you can type:
+```{bash}
+showqueue
+```
+More info on monitoring jobs [here](https://docs.hpc.qmul.ac.uk/using/monitoringjobs/)
+
