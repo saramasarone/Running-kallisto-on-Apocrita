@@ -98,5 +98,7 @@ If you see that your job is pending (qw) you can type:
 ```{bash}
 showqueue
 ```
+Once the job is run (and all the individual jobs are completed), check that the input (initial number of samples) and the output (new folders created in the `output` directory) match
+
 More info on monitoring jobs [here](https://docs.hpc.qmul.ac.uk/using/monitoringjobs/)
 
