@@ -86,7 +86,7 @@ To create the "output" directory:
 mkdir output
 ```
 
-![image](./image.png)
+![image](./Screenshot 2020-07-03 at 10.41.05.png)
 
 Last, to run our scripts and submit the job:
 ```{bash}
