@@ -34,7 +34,7 @@ We will use an array job as they are very useful when repeating the same analysi
 In order to run kallisto on Apocrita, we need to write a bash script where we request a certain amount of RAM, cores, run time and threads. Array jobs allow to run the same job a large number of times with different input parameters. Whilst this could be done by submitting lots of individual jobs, a more efficient and robust way is to use an array job. This makes kallisto fast and efficient.
 
 ### What we need to run kallisto
-Your data, two scripts and an index are required to run kallisto. They should all be present in the `sequencing` directory.
+Your data, two scripts and an index are required to run kallisto. Except the data, that can be in any directory,the rest should be present in the `sequencing` directory.
 > 1) A script (we) called start_kallisto_array.sh is required to submit the job
 
 > 2) A script (we) called kallisto_bash_array.sh is required to run kallisto
