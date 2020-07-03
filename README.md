@@ -5,7 +5,7 @@
 
 This documentation shows how to quantify abundances of transcripts from bulk and single-cell RNA-Seq data using [kallisto](https://pachterlab.github.io/kallisto/starting) on Apocrita (QMUL cluster).
 
-The first step is to log into [Apocrita](https://docs.hpc.qmul.ac.uk) and navigate to the folder where you would like to get the output files from `kallisto`. I would recommend to work in a dedicated directory created just for this analysis, possibly not the same directory where the sample files are stored.
+The first step is to log into [Apocrita](https://docs.hpc.qmul.ac.uk) and navigate to the folder where you would like to get the output files from `kallisto`. I would recommend to work in a dedicated directory created just for this analysis, possibly not the same directory where the sample files are stored. In this case we will call this directory `sequencing`.
 
 You can create a new directory with
 `mkdir [name_of_new_directory]`
@@ -34,7 +34,7 @@ We will use an array job as they are very useful when repeating the same analysi
 In order to run kallisto on Apocrita, we need to write a bash script where we request a certain amount of RAM, cores, run time and threads. Array jobs allow to run the same job a large number of times with different input parameters. Whilst this could be done by submitting lots of individual jobs, a more efficient and robust way is to use an array job. This makes kallisto fast and efficient.
 
 ### What we need to run kallisto
-Your data, two scripts and an index are required to run kallisto.
+Your data, two scripts and an index are required to run kallisto. They should all be present in the `sequencing` directory.
 > 1) A script (we) called start_kallisto_array.sh is required to submit the job
 
 > 2) A script (we) called kallisto_bash_array.sh is required to run kallisto
