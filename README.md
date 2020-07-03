@@ -86,6 +86,8 @@ To create the "output" directory:
 mkdir output
 ```
 
+![image](./image.png)
+
 Last, to run our scripts and submit the job:
 ```{bash}
 qsub start_kallisto_array.sh
@@ -98,7 +100,7 @@ If you see that your job is pending (qw) you can type:
 ```{bash}
 showqueue
 ```
-Once the job is finished (and all the individual jobs are completed), check that the input (initial number of samples) and the output (new folders created in the `output` directory) match
+Once the job is finished (and all the individual jobs are completed), check that the inputs (initial number of samples) and the outputs (new folders created in the `output` directory) match
 
 More info on monitoring jobs [here](https://docs.hpc.qmul.ac.uk/using/monitoringjobs/)
 
