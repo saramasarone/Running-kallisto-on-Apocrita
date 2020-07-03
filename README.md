@@ -85,6 +85,7 @@ To create the "output" directory:
 ```{bash}
 mkdir output
 ```
+Before running the script your folder should look like this (please ignore the `list_of_dirs.txt` file, it will be created automatically by `kallisto`)
 
 ![image](./pic_cluster.png)
 
