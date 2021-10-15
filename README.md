@@ -1,6 +1,6 @@
 ## How to efficiently run kallisto on Apocrita
 
-[Sara Masarone](https://www.turing.ac.uk/people/doctoral-students/sara-masarone)   [s.masarone@qmul.ac.uk](mailto:s.masarone@qmul.ac.uk)   [smasarone@turing.ac.uk](mailto:smasarone@turing.ac.uk)
+[Sara Masarone](https://www.turing.ac.uk/people/doctoral-students/sara-masarone)            [s.masarone@qmul.ac.uk](mailto:s.masarone@qmul.ac.uk)                        [smasarone@turing.ac.uk](mailto:smasarone@turing.ac.uk)
 
 
 This documentation shows how to quantify abundances of transcripts from bulk and single-cell RNA-Seq data using [kallisto](https://pachterlab.github.io/kallisto/starting) on Apocrita (QMUL cluster).
